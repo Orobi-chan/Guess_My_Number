@@ -7,7 +7,7 @@ document.querySelector('.score').textContent = scoreGame;
 
 let highScoreGame = 0;
 
-let secretNumber = Math.trunc(Math.random() * 20) + 1;
+let secretNumber = Math.trunc(Math.random() * 100) + 1;
 document.querySelector('.number').textContent = secretNumber;
 
 const displayMessage = function (message) {
@@ -100,7 +100,7 @@ console.log(secretNumber);
 const guessBlank = '';
 
 document.querySelector('.again').addEventListener('click', function () {
-  secretNumber = Math.trunc(Math.random() * 20) + 1;
+  secretNumber = Math.trunc(Math.random() * 100) + 1;
   console.log(secretNumber);
 
   scoreGame = 20;
